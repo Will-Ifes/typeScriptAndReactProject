@@ -2,17 +2,18 @@
 
 Interface de feed com publicações e comentários em componentes React tipados.
 
-## Contexto e objetivo
-
 Estudo de React, TypeScript, CSS Modules, Vite e date-fns.
 
-## Funcionalidades presentes
+## Destaques
 
 - Publicações com autor e conteúdo.
 - Inclusão e remoção de comentários.
 - Aplausos e datas formatadas.
 
-## Por dentro do código
+<details>
+<summary><strong>Organização e código</strong></summary>
+
+### Por dentro do código
 
 | Código | O que observar |
 | --- | --- |
@@ -21,7 +22,12 @@ Estudo de React, TypeScript, CSS Modules, Vite e date-fns.
 | [`src/components/Comment.tsx`](src/components/Comment.tsx) | Interações do comentário. |
 | [`src/components/Avatar.tsx`](src/components/Avatar.tsx) | Avatar reutilizável. |
 
-## Executar localmente
+</details>
+
+<details>
+<summary><strong>Executar e consultar</strong></summary>
+
+### Executar localmente
 
 Requer Node.js e npm compatíveis com as dependências versionadas.
 
@@ -34,9 +40,7 @@ npm run dev
 
 Abra o endereço informado pelo servidor no terminal.
 
-
-
-## Comandos disponíveis
+### Comandos disponíveis
 
 | Comando | Script versionado |
 | --- | --- |
@@ -44,11 +48,14 @@ Abra o endereço informado pelo servidor no terminal.
 | `npm run build` | `tsc && vite build` |
 | `npm run preview` | `vite preview` |
 
-Os comandos refletem o `package.json`. A existência de um script não comprova execução bem-sucedida no ambiente atual.
+</details>
 
-## Escopo e evolução
+<details>
+<summary>Escopo e referências</summary>
 
 Os dados são locais. O workflow de build está em `.github/workflows/build.yml`; consulte seu resultado na aba Actions. Persistência e testes de interação são próximos passos.
+
+</details>
 
 ---
 
