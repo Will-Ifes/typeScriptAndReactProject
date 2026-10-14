@@ -1,8 +1,19 @@
+<p align="center">
+  <img src="./.github/readme-cover.svg" alt="Ignite Feed: Publicações, comentários e contratos tipados." width="100%" />
+</p>
+
 # Feed de publicações · TypeScript
 
 Interface de feed com publicações e comentários em componentes React tipados.
 
 Estudo de React, TypeScript, CSS Modules, Vite e date-fns.
+
+## Explore o diferencial
+
+| Ponto de entrada | O que observar |
+| --- | --- |
+| [Interação com estado](src/components/Post.tsx) | Adicionar e excluir comentários acontece dentro do componente de publicação. |
+| [Contrato de componente](src/components/Comment.tsx) | Aplausos e callbacks mostram comunicação entre componentes tipados. |
 
 ## Destaques
 
