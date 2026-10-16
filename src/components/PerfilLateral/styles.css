@@ -1,0 +1,76 @@
+.perfil {
+    border: 1px solid var(--wl-line);
+    border-radius: var(--wl-radius-surface);
+    background: var(--wl-surface);
+    overflow: hidden;
+}
+
+/* Capa feita com a diagonal da marca, no lugar da foto externa do original */
+.perfil__capa {
+    height: 88px;
+    background:
+        repeating-linear-gradient(135deg, transparent 0 14px, color-mix(in srgb, var(--wl-surface) 18%, transparent) 14px 15px),
+        linear-gradient(135deg, var(--wl-diagonal-a) 50%, var(--wl-diagonal-b) 50%);
+}
+
+.perfil__corpo {
+    display: grid;
+    justify-items: center;
+    gap: var(--wl-space-1);
+    margin-top: -36px;
+    padding: 0 var(--wl-space-6) var(--wl-space-6);
+    text-align: center;
+}
+
+.perfil__corpo .avatar {
+    margin-bottom: var(--wl-space-3);
+}
+
+.perfil__nome {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.perfil__cargo {
+    color: var(--wl-secondary);
+    font-size: 14px;
+}
+
+.perfil__numeros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--wl-line);
+}
+
+.perfil__numeros div {
+    display: grid;
+    gap: var(--wl-space-1);
+    padding: var(--wl-space-4) var(--wl-space-2);
+    text-align: center;
+}
+
+.perfil__numeros div + div {
+    border-left: 1px solid var(--wl-line);
+}
+
+.perfil__numeros dt {
+    color: var(--wl-secondary);
+    font: 500 11px/16px var(--wl-font-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.perfil__numeros dd {
+    font: 500 20px/1 var(--wl-font-mono);
+}
+
+.perfil__rodape {
+    padding: var(--wl-space-4) var(--wl-space-6) var(--wl-space-6);
+    border-top: 1px solid var(--wl-line);
+}
+
+.perfil__rodape .btn {
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}

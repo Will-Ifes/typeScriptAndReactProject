@@ -1,0 +1,72 @@
+.compositor {
+    display: flex;
+    gap: var(--wl-space-4);
+}
+
+.compositor__campo {
+    display: grid;
+    flex: 1;
+    gap: 6px;
+    min-width: 0;
+}
+
+.compositor__rotulo {
+    font-weight: 600;
+}
+
+.compositor textarea {
+    width: 100%;
+    min-height: 96px;
+    padding: var(--wl-space-3) var(--wl-space-4);
+    border: 1px solid var(--wl-border);
+    border-radius: var(--wl-radius-control);
+    background: var(--wl-bg);
+    font: inherit;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 120ms var(--wl-ease);
+}
+
+.compositor[data-compacto] textarea {
+    min-height: 64px;
+}
+
+.compositor textarea::placeholder {
+    color: var(--wl-secondary);
+}
+
+.compositor textarea:hover {
+    border-color: var(--wl-text);
+}
+
+.compositor__rodape {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--wl-space-2);
+}
+
+.compositor__ajuda {
+    color: var(--wl-secondary);
+    font: 400 12px/18px var(--wl-font-mono);
+}
+
+.compositor__ajuda [data-alerta] {
+    color: var(--wl-danger);
+}
+
+kbd {
+    padding: 0 4px;
+    border: 1px solid var(--wl-line);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    font: inherit;
+}
+
+@media (max-width: 600px) {
+    .compositor > .avatar,
+    .compositor__atalho {
+        display: none;
+    }
+}
