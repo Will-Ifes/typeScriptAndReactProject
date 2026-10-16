@@ -1,0 +1,43 @@
+.avatar {
+    --tamanho: 48px;
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: var(--tamanho);
+    height: var(--tamanho);
+    border-radius: 12px;
+    background: var(--wl-muted);
+    overflow: hidden;
+}
+
+.avatar[data-tamanho='p'] {
+    --tamanho: 40px;
+    border-radius: 10px;
+}
+
+.avatar[data-tamanho='g'] {
+    --tamanho: 72px;
+    border-radius: 18px;
+}
+
+/* Moldura com a diagonal de duas cores do Will Labs */
+.avatar[data-destaque] {
+    padding: 3px;
+    background: linear-gradient(135deg, var(--wl-diagonal-a) 50%, var(--wl-diagonal-b) 50%);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.avatar[data-destaque] img {
+    border: 2px solid var(--wl-surface);
+    border-radius: calc(var(--tamanho) / 4);
+}
+
+.avatar__iniciais {
+    font: 600 14px var(--wl-font-mono);
+}

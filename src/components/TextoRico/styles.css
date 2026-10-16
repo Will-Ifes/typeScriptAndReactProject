@@ -1,0 +1,19 @@
+.texto-rico {
+    display: grid;
+    gap: var(--wl-space-3);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+.texto-rico a {
+    color: var(--wl-accent);
+    font-weight: 600;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.texto-rico a:hover {
+    color: var(--wl-hover);
+    text-decoration-thickness: 2px;
+}

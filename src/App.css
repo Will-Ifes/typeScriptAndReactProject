@@ -1,0 +1,129 @@
+.pular {
+    position: absolute;
+    top: -100px;
+    left: var(--wl-space-4);
+    z-index: 20;
+    padding: var(--wl-space-2) var(--wl-space-4);
+    border-radius: var(--wl-radius-control);
+    background: var(--wl-accent);
+    color: var(--wl-on);
+    font-weight: 600;
+}
+
+.pular:focus {
+    top: var(--wl-space-4);
+}
+
+/* No celular o feed vem primeiro; o perfil fica depois */
+.layout > .perfil {
+    order: 2;
+}
+
+.layout {
+    display: grid;
+    gap: var(--wl-space-6);
+    width: min(1120px, 100% - 32px);
+    margin: 0 auto;
+    padding: var(--wl-space-8) 0 var(--wl-space-12);
+}
+
+.feed {
+    display: grid;
+    align-content: start;
+    gap: var(--wl-space-6);
+    min-width: 0;
+}
+
+.feed:focus {
+    outline: none;
+}
+
+.feed__titulo {
+    display: grid;
+    gap: var(--wl-space-2);
+}
+
+.feed__titulo h1 {
+    font-size: clamp(32px, 6vw, 46px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.feed__novo {
+    padding: var(--wl-space-6);
+    border: 1px solid var(--wl-line);
+    border-radius: var(--wl-radius-surface);
+    background: var(--wl-surface);
+}
+
+.feed__barra {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--wl-space-3);
+}
+
+.feed__contagem {
+    color: var(--wl-secondary);
+    font: 500 12px/18px var(--wl-font-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.feed__lista {
+    display: grid;
+    gap: var(--wl-space-4);
+}
+
+.feed__vazio {
+    padding: var(--wl-space-12) var(--wl-space-6);
+    border: 2px dashed var(--wl-line);
+    border-radius: var(--wl-radius-surface);
+    color: var(--wl-secondary);
+    text-align: center;
+}
+
+.segmentado {
+    display: flex;
+    padding: 3px;
+    border: 1px solid var(--wl-border);
+    border-radius: var(--wl-radius-control);
+}
+
+.segmentado button {
+    min-height: calc(var(--wl-control) - 8px);
+    padding: 0 var(--wl-space-3);
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--wl-secondary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.segmentado button[aria-pressed='true'] {
+    background: var(--wl-accent);
+    color: var(--wl-on);
+}
+
+@media (min-width: 850px) {
+    .layout {
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: var(--wl-space-8);
+        padding-top: var(--wl-space-12);
+    }
+
+    .layout > .perfil {
+        order: 0;
+        position: sticky;
+        top: calc(64px + var(--wl-space-6));
+        align-self: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .feed__novo {
+        padding: var(--wl-space-4);
+    }
+}

@@ -1,0 +1,37 @@
+.aplauso {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--wl-space-2);
+    min-height: 36px;
+    padding: 0 var(--wl-space-3);
+    border: 1px solid transparent;
+    border-radius: var(--wl-radius-control);
+    background: transparent;
+    color: var(--wl-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 120ms var(--wl-ease), color 120ms var(--wl-ease);
+}
+
+.aplauso:hover {
+    background: var(--wl-muted);
+    color: var(--wl-text);
+}
+
+.aplauso[aria-pressed='true'] {
+    color: var(--wl-accent);
+}
+
+.aplauso__contagem {
+    min-width: 24px;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: var(--wl-muted);
+    font: 500 12px/20px var(--wl-font-mono);
+    text-align: center;
+}
+
+.aplauso[aria-pressed='true'] .aplauso__contagem {
+    background: var(--wl-accent);
+    color: var(--wl-on);
+}
