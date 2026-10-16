@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./.github/readme-cover.svg" alt="Ignite Feed: Publicações, comentários e contratos tipados." width="100%" />
+  <a href="https://will-ifes.github.io/typeScriptAndReactProject/">
+    <img src="./.github/readme-cover.svg?v=20261016" alt="Ignite Feed. Publicações e conversas na identidade Paper e Forest." width="100%" />
+  </a>
 </p>
 
 # Feed de publicações · React e TypeScript
@@ -9,7 +11,11 @@ Um feed com posts, comentários e aplausos, feito no Ignite da Rocketseat para e
 **React 19 · TypeScript · Vite 8 · Vitest** · [Ver online](https://will-ifes.github.io/typeScriptAndReactProject/)
 
 <p align="center">
-  <img src="./.github/demo.gif" alt="Demonstração: um post novo é publicado com link clicável, recebe um aplauso, um comentário é escrito, apagado e devolvido com Desfazer, e o tema muda para o escuro." width="760" />
+  <a href="https://will-ifes.github.io/typeScriptAndReactProject/">
+    <img src="./.github/demo.gif" alt="Demonstração: um post novo é publicado com link clicável, recebe um aplauso, um comentário é escrito, apagado e devolvido com Desfazer, e o tema muda para o escuro." width="760" />
+  </a>
+  <br />
+  <sub>Clique na demonstração para abrir a página publicada.</sub>
 </p>
 
 ## O que dá para fazer
